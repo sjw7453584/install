@@ -125,7 +125,7 @@ Clicking on a + or - in the fringe will fold that tag."
   :group 'semantic
   :group 'semantic-modes
   :type 'boolean
-  :require 'semantic-util-modes
+  :require 'semantic/util-modes
   :initialize 'custom-initialize-default
   :set (lambda (sym val)
          (global-semantic-folding-mode (if val 1 -1))))

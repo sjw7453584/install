@@ -1,5 +1,5 @@
 ;;; semantic-tag-folding.el --- semantic decoration style to enable folding of semantic tags
-;; Time-stamp: <2010-09-15 16:20:59 (lluis)>
+;; Time-stamp: <2013-10-16 14:22:00 Wednesday by media>
 
 ;;; Copyright (C) 2005, 2009, 2010, 2013 Suraj Acharya
 
@@ -112,7 +112,7 @@ Clicking on a + or - in the fringe will fold that tag."
   :group 'semantic
   :group 'semantic-modes
   :type 'boolean
-  :require 'semantic-util-modes
+  :require 'semantic/util-modes
   :initialize 'custom-initialize-default
   :set (lambda (sym val)
          (global-semantic-tag-folding-mode (if val 1 -1))))
